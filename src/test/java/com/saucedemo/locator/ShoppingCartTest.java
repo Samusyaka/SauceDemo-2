@@ -13,22 +13,22 @@ import org.testng.annotations.Test;
 public class ShoppingCartTest {
     private WebDriver driver;
 
-    public By loginLocator = By.id("user-name");
+    public final By loginLocator = By.id("user-name");
 
-    public By passwordLocator = By.id("password");
+    public final By passwordLocator = By.id("password");
 
-    public By itemLocator = By.id("add-to-cart-sauce-labs-backpack");
+    public static final By itemLocator = By.id("add-to-cart-sauce-labs-backpack");
 
-    public By itemNameLocator = By.cssSelector("#item_4_title_link .inventory_item_name");
+    public static final By itemNameLocator = By.cssSelector("#item_4_title_link .inventory_item_name");
 
-    public By itemPriceLocator = By.xpath("//*[@id='item_4_title_link']/../..//*" +
+    public static final By itemPriceLocator = By.xpath("//*[@id='item_4_title_link']/../..//*" +
             "[@class='inventory_item_price' and contains(normalize-space(.), '$')]");
 
-    public By shoppingCartLocator = By.className("shopping_cart_link");
+    public static final By shoppingCartLocator = By.className("shopping_cart_link");
 
-    public By shoppingCartNameLocator = By.cssSelector("#item_4_title_link .inventory_item_name");
+    public static final By shoppingCartNameLocator = By.cssSelector("#item_4_title_link .inventory_item_name");
 
-    public By shoppingCartPriceLocator = By.xpath("//*[@class='inventory_item_price' and contains" +
+    public static final By shoppingCartPriceLocator = By.xpath("//*[@class='inventory_item_price' and contains" +
             "(normalize-space(.), '$')]");
 
     @BeforeTest
